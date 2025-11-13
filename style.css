@@ -91,17 +91,23 @@ footer {
 
 .links {
   background-color: #ffc107;
-  height: 40vh;
+  height: auto;
   width: 30vw;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   border-radius: 2vw;
+  padding: 1vh 1vw;
+  gap: 5vh;
 }
 
 .links a {
   color: #0f0f0f;
   text-decoration: none;
   font-weight: bold;
+}
+
+.links img {
+  height: 15%;
 }
