@@ -12,7 +12,7 @@ body {
   font-size: 2vw;
   display: grid;
   justify-items: center;
-  gap: 3.841vw;
+  gap: 6.841vw;
 }
 
 titre {
@@ -22,7 +22,12 @@ titre {
   text-decoration-color: #ffc107;
 }
 
+h1 {
+  margin: 0px;
+}
+
 a {
+  text-decoration: none;
   color: #ffc107;
 }
 
@@ -32,18 +37,28 @@ a {
 
 ol {
   padding: 0px;
+  margin: 0px;
 }
 
-ol > li > a {
-  text-decoration: none;
+li > a {
   font-weight: bold;
   opacity: 0.5;
   transition: opacity 0.5s ease;
 }
 
-ol > li > a:hover {
+li > a:hover {
   text-decoration: underline dashed;
+  text-decoration-thickness: 15%;
   opacity: 1;
+}
+
+li::marker {
+  color: #00000062;
+}
+
+li:hover::marker {
+  color: #ffffff;
+  content: ">  ";
 }
 
 .Paragraph {
@@ -69,9 +84,12 @@ ol > li > a:hover {
   transform: scale(1.05);
 }
 
-.pages > a {
-  text-decoration: none;
-  color: #ffc107;
+.pages {
+  cursor: pointer;
+}
+
+.pages > a:hover {
+  color: #ffffff;
 }
 
 footer {
@@ -87,6 +105,10 @@ footer {
   padding: 0% 2.5% 2.5% 0%;
   font-size: 150%;
   font-weight: 900;
+}
+
+.help-nav a {
+  text-decoration: underline solid;
 }
 
 .links {
